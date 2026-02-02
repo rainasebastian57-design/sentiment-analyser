@@ -1,0 +1,80 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Floating Back Button */
+.back-nav {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  background: white;
+  border: 3px solid black;
+  font-weight: 900;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px black;
+  transition: 0.1s;
+}
+
+.back-nav:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px black;
+}
+
+/* Result Box Style */
+.result-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 4px solid black;
+  background: #fdfdfd;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.result-emoji { font-size: 2.5rem; }
+
+.emotion-name {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.flavor-text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Footer Buttons */
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  font-weight: 900;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9rem;
+}
+
+/* ... (keep previous .check-btn, .vibe-input, and .speech-bubble styles) ... */

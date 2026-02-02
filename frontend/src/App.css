@@ -1,0 +1,25 @@
+.app-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Applying the blue theme from your uploaded image */
+  background-color: #2cb5e8; 
+  background-image: url('img1.jpeg'); /* Ensure this matches your file name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Prevents unwanted scrolling on mobile */
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Optional: Add a subtle animation to the background to make it feel 'alive' */
+@keyframes backgroundFocus {
+  0% { background-scale: 1; }
+  50% { background-scale: 1.05; }
+  100% { background-scale: 1; }
+}
